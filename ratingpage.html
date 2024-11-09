@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate This Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .rating-container {
+            text-align: center;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .rating-options {
+            margin-bottom: 20px;
+        }
+        label {
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        textarea {
+            width: 100%;
+            height: 80px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            resize: none;
+        }
+        button {
+            background-color: #000201;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #4d504d;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <img src="logo1.png" class="logo1">
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="ratingpage.html">Rate This Website</a></li>
+        </ul>
+    </nav>
+
+    <div class="rating-container">
+        <h1>Rate This Website</h1>
+        <div class="rating-options">
+            <label><input type="radio" name="rating" value="1"> 1</label>
+            <label><input type="radio" name="rating" value="2"> 2</label>
+            <label><input type="radio" name="rating" value="3"> 3</label>
+            <label><input type="radio" name="rating" value="4"> 4</label>
+            <label><input type="radio" name="rating" value="5"> 5</label>
+    </div>
+        <textarea placeholder="Leave a comment..."></textarea>
+        <button>Submit Rating</button>
+    </div>
+</body>
+</html>

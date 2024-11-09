@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pamen Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      body {
+          background-image: url("bg1.png");
+          background-size: 100vw 170vh;
+          background-repeat: no-repeat;
+      }
+      body::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: inherit; 
+          filter: blur(10px); 
+          z-index: -1;
+      }
+      .navbar {
+          width: 85%;
+          margin: auto;
+          padding: 35px 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+      }
+      .logo1 {
+          width: 120px;
+          cursor: pointer;
+          background-color: white;
+          border-radius: 50%;
+      }
+      .navbar ul li {
+          font-family: 'Kanit', sans-serif;
+          list-style: none;
+          display: inline-block;
+          margin: 0 20px;
+          position: relative;
+      }
+      .navbar ul li a {
+          text-decoration: none;
+          color: white;
+          text-transform: uppercase;
+          font-weight:700;
+          
+      }
+      .navbar ul li::after{
+          content: "";
+          height: 3px;
+          width: 0;
+          background-color: aqua;
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          transition: 0.5s;
+      }
+      .navbar ul li:hover::after {
+          width: 100%;
+      }
+      .first_page {
+        margin-left: 20%;
+        margin-right: 20%;
+        border: -0px groove;
+      }
+      
+      .grid-container {
+        display: grid;
+        grid-template-columns: 40% auto;
+        background-color: white;
+        padding: 10px;
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+      
+      .grid-container > div {
+        background-color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      
+      .grid-container1 {
+        display: grid;
+        grid-template-columns: 50% auto;
+        gap: 80px;
+        background-color: white;
+        padding: 10px;
+        margin-left: -10px;
+        margin-right: 10px;
+      }
+      
+      .grid-container1 > div {
+        background-color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+
+      .left-side {
+        background-color: #163853;
+      }
+      
+      .left-first > div {
+        color: white;
+
+      }
+
+      .resumepic {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 50%;
+        height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 54%;
+      }
+
+      .resumepic {
+        border-top-color: blue;
+        border: 4px solid white;
+      }
+
+      fieldset > p {
+        text-align: justify;
+      }
+
+      .name1 {
+        margin-top: 50px;
+        margin-left: 20px;
+        color: #4a4b4d;
+        font-size: 42px;
+        margin-bottom: -20px;
+        font-weight: bold;
+      }
+
+      .course {
+        font-size: 25px;
+        margin-left: 20px;
+        margin-bottom: -20px;
+      }
+
+      .right {
+        margin-left: 30px;
+      }
+
+      .p11 {
+        border-top: 1px dashed;
+      }
+
+      .hr2 {
+        margin-top: 30px;
+        margin-bottom: -30px;
+        margin-left: 20px;
+        margin-right: 370px;
+        border-top: 5px solid #163853;
+      }
+
+      .tab {
+        display: inline-block;
+        margin-left: 106px;
+      }
+
+      .tab1 {
+        display: inline-block;
+        margin-left: 212px;
+      }
+
+      .tab2 {
+        display: inline-block;
+        margin-left: 291px;
+      }
+      </style>  
+
+
+</head>
+
+
+
+<body>
+  <nav class="navbar">
+    <img src="logo1.png" class="logo1">
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="ratingpage.html">Rate This Website</a></li>
+    </ul>
+  </nav>
+  <fieldset class="first_page">
+      <div class="grid-container">
+      <!-- LEFT SIDE GRID -->
+        <div class="left-first">
+            
+            <div class="left-side">
+              <br>
+              <img src="Pamen2x2.jpg" alt="Pamen Pic" class="resumepic">
+              <fieldset>
+                <legend style="font-weight: bold; font-size: 20px;">Contacts</legend>
+                <p style="margin-left: 30px; margin-right: 30px;">
+                  <span class="telephone"><ion-icon name="call"></ion-icon></span>
+                  +63 935 8321 230 <br><br>
+                  <span class="email"><ion-icon name="mail"></ion-icon></span>
+                  &nbsp;johnmichael.pamen1@gmail.com <br><br>
+                  <span class="home"><ion-icon name="home"></ion-icon></span>
+                  66 Dahlia Street, Old Capitol Site, &emsp;&nbsp;Quezon City. <br><br></p>
+              </fieldset>
+    
+              <fieldset>
+                <legend style="font-weight: bold; font-size: 20px;">Skills</legend>
+                <ul style="margin-left: 15px;">
+                  <li style="margin-bottom: 10px;">Computer Literate</li>
+                  <li style="margin-bottom: 10px;">Versatile</li>
+                  <li style="margin-bottom: 10px;">Effective Communication</li>
+                  <li style="margin-bottom: 10px;">Time Management</li>
+                  <li style="margin-bottom: 10px;">Efficient Worker</li>
+                  <li style="margin-bottom: 10px;">Order Management</li>
+                  <li style="margin-bottom: 10px;">Critical Thinking</li>
+                </ul>
+              </fieldset>
+    
+              <fieldset>
+                <legend style="font-weight: bold; font-size: 20px;">Expertise</legend>
+                <ul style="margin-left: 15px; margin-right: 20px;">
+                  <li style="margin-bottom: 10px; text-align: justify;">Digital Skills:  <br> Proficient in Microsoft Office, Google Workspace, and Video Conferencing.</li>
+                  <li style="margin-bottom: 10px; text-align: justify;">Scripting/Coding Skills: <br> C, C++, Python</li>
+                </ul>
+              </fieldset>
+
+              <fieldset>
+                <legend style="font-weight: bold; font-size: 20px;">Languages</legend>
+                  <ul style="margin-left: 15px; margin-right: 30px; margin-bottom: -100px;">
+                    <li>Filipino</li>
+                    <li>English</li>
+                  </ul><br><br><br><br><br>
+              </fieldset>
+              <br>
+            </div>
+    
+    <!--RIGHT SIDE GRID -->
+    
+        </div>
+          <div class="right">
+            <div class="name">
+              <p class="name1">John Michael Pamen</p>
+              <p class="course">Entry-Level Data Analyst</p>
+              <hr class="hr2">
+            </div>
+            
+            <div>
+              <br><br><br>
+              <p style="font-weight: bolder; font-size: 25px; color: #163853; margin-bottom: 10px; margin-top: 37px;">Objective</p>
+              <hr>
+              <p style="text-align: justify;">Highly motivated and analytical professional with a strong background in data analysis, statistical techniques, and data visualization. Seeking to leverage expertise in SQL, Excel, Python, and data visualization tools to drive data-informed decision-making, uncover insights, and contribute to organizational success. Eager to apply strong problem-solving skills to transform complex data into actionable business strategies.</p>
+            </div>
+    
+            
+            <div>
+              <p style="font-weight: bolder; font-size: 25px; color: #163853; margin-bottom: 10px;">Education</p>
+              <hr>
+
+              
+              <p style="font-weight: bold;">Bachelor of Science in Information System (BSIS)</p>
+              <p style="font-size: 12px; margin-top: -10px;">Technological University of the Philippines Manila (TUPM)   <span class="tab"></span> (2022 - Present)</p> 
+              <p style="font-style: italic; font-size: 12px; margin-top: -10px;">Undergraduate</p> 
+              
+            </div>
+            
+            <div>
+              
+              <p style="font-weight: bold; margin-top: 20px;">Science, Technology, Engineering, and Mathematics</p>
+              <p style="font-size: 12px; margin-top: -10px;">Ramon Magsaysay (Cubao) High School   <span class="tab1"></span> (2020 - 2022)</p> 
+              <p style="font-style: italic; font-size: 12px; margin-top: -10px; margin-bottom: 20px;">Senior High School</p> 
+              
+            </div>
+            
+            <div>
+              
+              <p style="font-size: 12px; margin-top: 10px;">Quezon City High School <span class="tab2"></span> (2016 - 2020)</p> 
+              <p style="font-style: italic; font-size: 12px; margin-top: -10px;">Junior High School</p> 
+              
+            </div>
+            
+            <div>
+              <p style="font-weight: bolder; font-size: 25px; color: #163853; margin-bottom: 10px;">Experience</p>
+              <hr>
+              <p style="font-weight: bold; margin-top: 20px;">Data Analyst Intern</p>
+              <p style="font-size: 12px; margin-top: -10px;">Enriquez Company<span class="tab1"></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; (2020 - 2022)</p> 
+              <p style="font-style: italic; font-size: 12px; margin-top: -10px; margin-bottom: 20px;">Company Internship</p> 
+              <ul>
+                <li style="font-size: 12px; margin-top: -10px; text-align: justify;">Supported the development of dashboards in Power BI, presenting key metrics that improved management’s understanding of performance trends.</li>
+                <li style="font-size: 12px; margin-top: 10px; text-align: justify;">Conducted research on customer behavior and market trends, presenting findings that influenced product development strategies.</li>
+              </ul>
+            </div>
+            
+              <p style="font-weight: bolder; font-size: 25px; color: #163853; margin-bottom: 10px;">Character References</p>
+              <hr>
+            <div class="grid-container1">
+              <!-- left side -->
+              <p style="font-weight: bold; margin-top: -10px;" >Maria Sheila Israel P. Fausto <span></span></p>
+              <p style="font-weight: bold; margin-top: -10px;" >Angel Mae Laureano <span></span></p>
+              <!-- right side -->
+              <p style="margin-top: -90px;">+63 923 2310 932</p>
+              <p style="margin-top: -88px;">+63 912 3291 321</p>
+              
+              <p style="margin-top: -143px;">sheilafausto@gmail.com</p>
+              <p style="margin-top: -143px;">amlaureano@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+  </fieldset>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+</script>
+</body>
+</html>
